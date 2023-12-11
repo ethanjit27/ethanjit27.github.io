@@ -1,0 +1,98 @@
+@import url(body.css);
+
+@media only screen and (max-device-width: 480px) and (min-device-pixel-ration: 2) {
+    body {
+        font-size: 14px;
+      }
+    
+      nav {
+        flex-direction: column;
+      }
+    
+      .sidebar {
+        display: none;
+      }
+}
+
+.background  {
+    background-image: url('../images/riverbackround.jpeg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    position: relative;
+    overflow: auto;
+    z-index: 0;
+}
+
+body {
+    color: bisque;
+}
+
+img {
+    width: 400px;
+    height: 400px;
+}
+
+.hockey {
+    border: 2px solid white;
+    margin: 20px;
+    box-shadow: 0 0 10px white;
+}
+
+.hangingout {
+    border: 2px solid white;
+    margin: 20px;
+    box-shadow: 0 0 10px white;
+}
+
+.photography {
+    border: 2px solid white;
+    margin: 20px;
+    box-shadow: 0 0 10px white;
+}
+
+nav {
+    background-color: #333;
+    overflow: auto;
+    text-align: center;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: auto;
+}
+
+li {
+    display: inline-flex;
+}
+
+a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+a:hover {
+    background-color: grey;
+}
+
+a.active {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.background::before {
+    content: "";
+    background: inherit;
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    filter: blur(1px);
+}
